@@ -17,8 +17,12 @@
                     Home
                 </a>
                 <a href="/posts"
-                   class="navbar-item {{ Request::path() === 'posts' ? "is-active" : "" }}">
+                       class="navbar-item {{ Request::path() === 'posts' ? "is-active" : "" }}">
                     Blog
+                </a>
+                <a href="/companies"
+                   class="navbar-item {{ Request::path() === 'companies' ? "is-active" : "" }}">
+                    Companies
                 </a>
 
             </div>
