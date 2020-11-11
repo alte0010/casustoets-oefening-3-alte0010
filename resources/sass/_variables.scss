@@ -1,0 +1,20 @@
+/*
+ * Customize the looks of the app.
+ *
+ * See for examples: https://versions.bulma.io/0.7.0/documentation/overview/customize/
+ */
+// Import the initial variables
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// Colors
+$primary: #0a2d66;
+$primary-invert: #fff;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+$family-serif: 'Kanit', sans-serif;
+$family-primary: $family-serif;
+
+// Finally import the rest of the derived variables
+@import "~bulma/sass/utilities/derived-variables";
