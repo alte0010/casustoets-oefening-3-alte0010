@@ -15,3 +15,4 @@ Route::get('/', 'HomeController@index');
 
 Route::resource('posts', 'PostsController');
 
+return view('welcome', compact('latestPosts'));

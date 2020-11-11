@@ -4,7 +4,7 @@
 
             <div class="column has-text-centered">
                 <div>
-                    <a href="/home" class="link">Home</a>
+                    <a href="/" class="link">Home</a>
                 </div>
             </div>
 
