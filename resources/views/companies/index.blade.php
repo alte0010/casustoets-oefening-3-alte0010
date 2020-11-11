@@ -19,20 +19,24 @@
                         <th style="width: 5%">Name</th>
                         <th style="width: 1%">Country</th>
                         <th style="width: 10%">Founded at</th>
-                        <th>History</th>
+                        <th style="width: 10%">History</th>
+                        <th style="width: 10%">Created on</th>
+                        <th style="width: 10%">Last edited</th>
                     </tr>
 
                     @foreach($company as $company)
                         <tr>
                             <td>{{$company->name}}</td>
-                            <td>{{$company->country</td>
-                            <td>{{$company->founded_at</td>
-                            <td>{{$company->history}}</td>
+                            <td>{{$company->country}}</td>
+                            <td>{{$company->founded_at}}</td>
+                            <td>{!!$company->history!!}</td>
+                            <td>{{$company->created_at}}</td>
+                            <td>{{$company->updated_at}}</td>
                         </tr>
                     @endforeach
                 </table>
 
-                <a href="/../company/create">
+                <a href="/../companies/create">
                     <button class="button">
                         Create company
                     </button>

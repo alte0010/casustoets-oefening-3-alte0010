@@ -16,6 +16,6 @@ Route::get('/', 'HomeController@index');
 Route::resource('posts', 'PostsController');
 Route::resource('companies', 'CompanyController');
 
-Route::get('/companies/{companies}/create', 'CompanyController@create');
+/*Route::get('/companies/{companies}/create', 'CompanyController@create');*/
 
 return view('welcome', compact('latestPosts'));

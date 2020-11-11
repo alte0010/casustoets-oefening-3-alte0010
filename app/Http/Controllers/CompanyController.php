@@ -14,7 +14,7 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        return view('company.index', [
+        return view('companies.index', [
             'company' => $this->getCompanies(),
         ]);
     }
@@ -26,13 +26,13 @@ class CompanyController extends Controller
      */
     public function create()
     {
-        return view('companiess.create');
+        return view('companies.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -58,7 +58,7 @@ class CompanyController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Company  $company
+     * @param \App\Company $company
      * @return \Illuminate\Http\Response
      */
     public function show(Company $company)
@@ -69,7 +69,7 @@ class CompanyController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Company  $company
+     * @param \App\Company $company
      * @return \Illuminate\Http\Response
      */
     public function edit(Company $company)
@@ -80,8 +80,8 @@ class CompanyController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Company  $company
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Company $company
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Company $company)
@@ -92,25 +92,24 @@ class CompanyController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Company  $company
+     * @param \App\Company $company
      * @return \Illuminate\Http\Response
      */
     public function destroy(Company $company)
     {
         //
     }
-}
 
-public function getCompanies(): array
-{
-    $companies = Company::all();
-
-    $result = [];
-
-    foreach ($companies as $company)
+    public function getCompanies(): array
     {
-        $result[] = $company;
-    }
+        $companies = Company::all();
 
-    return $result;
+        $result = [];
+
+        foreach ($companies as $company) {
+            $result[] = $company;
+        }
+
+        return $result;
+    }
 }
