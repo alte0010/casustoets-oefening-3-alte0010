@@ -96,7 +96,7 @@ $ php artisan db:seed
 
 ## Authors
 
-* **Daan de Waard** - *Initial work* - [dwaard](https://github.com/dwaard)
+* **Dyon Altena** - *Initial work* - [alte0010](https://github.com/HZ-HBO-ICT/casustoets-oefening-2-alte0010)
 
 See also the list of [contributors](https://github.com/HZ-HBO-ICT/blok-3-casustoets-bsmdb/graphs/contributors) who 
 participated in this project.
