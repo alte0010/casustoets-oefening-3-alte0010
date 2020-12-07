@@ -15,15 +15,23 @@ class CreateMoviesTable extends Migration
     {
         Schema::create('movies', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->UnsignedbigInteger('company_id');
             $table->string('title');
             $table->unsignedSmallInteger('year');
             $table->text('excerpt');
-            $table->timestamp('last_watched_at')->nullable();
+            $table->timestamp('last_watched_at');
             $table->unsignedSmallInteger('times_watched')->default(0);
-            $table->float('average_rating')->default(0);
+            $table->float('average_rating')->default(1);
             $table->timestamps();
+
+            $table->foreign('company_id')
+                ->references('id')
+                ->on('companies')
+                ->onDelete('cascade');
         });
+
     }
+
 
     /**
      * Reverse the migrations.
