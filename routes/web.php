@@ -15,6 +15,7 @@ Route::get('/', 'HomeController@index');
 
 Route::resource('posts', 'PostsController');
 Route::resource('companies', 'CompanyController');
+Route::resource('movies', 'MovieController');
 
 /*Route::get('/companies/{companies}/create', 'CompanyController@create');*/
 

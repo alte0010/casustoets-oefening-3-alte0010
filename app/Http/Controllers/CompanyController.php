@@ -74,7 +74,8 @@ class CompanyController extends Controller
      */
     public function edit(Company $company)
     {
-        return view("companies.edit", compact('company'));
+
+        return view('companies.edit', compact('company'));
     }
 
     /**
@@ -86,7 +87,9 @@ class CompanyController extends Controller
      */
     public function update(Request $request, Company $company)
     {
-        //
+        $company->update($request->all());
+
+        return redirect()->route('companies.index');
     }
 
     /**
@@ -95,9 +98,11 @@ class CompanyController extends Controller
      * @param \App\Company $company
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Company $company)
+    public function destroy(Request $request, Company $company)
     {
-        //
+        $company->delete($request->all());
+
+        return redirect()->route('companies.index');
     }
 
     public function getCompanies(): array

@@ -26,6 +26,14 @@
                 </div>
 
                 <div class="field">
+                    <label class="label" for="founded_at">Founded At</label>
+
+                    <div class="control">
+                        <textarea class="founded_at" name="founded_at" id="founded_at">{{$company->founded_at}}</textarea>
+                    </div>
+                </div>
+
+                <div class="field">
                     <label class="label" for="history">History</label>
 
                     <div class="control">
@@ -38,5 +46,5 @@
                         <button class="button is-link" type="submit">Submit</button>
                     </div>
                 </div>
-        </div>
+
 @endsection

@@ -7,9 +7,9 @@ use Faker\Generator as Faker;
 
 $factory->define(Company::class, function (Faker $faker) {
     return [
-        'name' => $faker->name(1),
+        'name' => $faker->company,
         'Country' => $faker->country,
         'founded_at' => $faker->dateTime,
-        'history' => '<p>'.implode('</p><p>', $faker->paragraphs(5)).'</p>',
+        'history' => '<p>'.implode('</p><p>', $faker->paragraphs(5)).'</p>'
     ];
 });

@@ -4,11 +4,11 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-12">  These divs are needed for proper layout
+                <div class="column is-12">
                     <form method="POST" action="/companies">
-                        <div class="card">  The form is placed inside a Bulma Card component
+                        <div class="card">
                             <header class="card-header">
-                                <p class="card-header-title">  The Card header content
+                                <p class="card-header-title">
                                     Create a New Company
                                 </p>
                             </header>
@@ -16,7 +16,8 @@
                             <div class="card-content">
                                 <div class="content">
                                     @csrf
-                                     Here are all the form fields
+                                     Fill in the form fields
+
                                     <div class="field">
                                         <label class="label">Name</label>
                                         <div class="control">
@@ -53,7 +54,7 @@
                                 <div class="field is-grouped">
                                      Here are the form buttons: save, reset and cancel
                                     <div class="control">
-                                        <button type="submit" class="button is-primary">Save</button>
+                                        <button type="submit" class="button is-link">Save</button>
                                     </div>
                                     <div class="control">
                                         <button type="reset" class="button is-warning">Reset</button>

@@ -7,6 +7,7 @@
                 <p class="title is-2">Companies</p>
                 <p class="subtitle is-3">exciting tagline</p>
 
+
             </div>
         </div>
     </section>
@@ -14,6 +15,7 @@
     <section class="hero  is-medium  is-light is-fullwidth">
         <div class="hero-body">
             <div class="container">
+                <a href="/companies/create" class="button is-primary">Create Company</a>
                 <table class="table is-fullwidth">
                     <tr>
                         <th style="width: 5%">Name</th>
@@ -26,7 +28,8 @@
 
                     @foreach($company as $company)
                         <tr>
-                            <td>{{$company->name}}</td>
+                            <td><a href= "{{ URL("/companies/{$company->id}") }}"> {{$company->name}}</a></td>
+                            {{--<td>{{$company->name}}</td>--}}
                             <td>{{$company->country}}</td>
                             <td>{{$company->founded_at}}</td>
                             <td>{!!$company->history!!}</td>

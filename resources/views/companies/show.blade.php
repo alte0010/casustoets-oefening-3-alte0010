@@ -1,15 +1,22 @@
 @extends('common.master')
 
 @section('content')
-    <section class="hero  is-large  is-bold is-primary"  style="background: url('{{$company->img_url}}') no-repeat center center; background-size: cover;" >
+    l
         <div class="hero-body">
             <div class="container">
-                <p class="title is-2">{{$company->name}}</p>
+                <p class="title is-1">{{$company->name}}</p>
                 <p class="subtitle is-3"></p>
 
             </div>
-        </div>
+
+    <a href="/companies/{{$company->id}}/edit" class="button is-primary">Edit Company</a>
+            <form action="/companies/{{$company->id}}?_method=DELETE" method="POST">
+                @csrf
+                <button class="ui red basic button">DELETE</button>
+            </form>
+
     </section>
+
 
     <section class="section">
         <div class="container">
@@ -18,12 +25,13 @@
                 <div class="column is-12">
 
                     <div class="content">
-                        <p>Published: {{ $company->published_at }}</p>
+                        <p>Country: {{ $company->country }}</p>
+                        <p>Founded at: {{ $company->founded_at }}</p>
 
                         {!! $company->history !!}
                     </div>
-
                 </div>
             </div>
     </section>
-@endsection<?php
+
+@endsection
