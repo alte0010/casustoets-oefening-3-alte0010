@@ -10,6 +10,6 @@ $factory->define(Company::class, function (Faker $faker) {
         'name' => $faker->company,
         'Country' => $faker->country,
         'founded_at' => $faker->dateTime,
-        'history' => '<p>'.implode('</p><p>', $faker->paragraphs(5)).'</p>'
+        'history' => $faker->text
     ];
 });

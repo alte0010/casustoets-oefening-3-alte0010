@@ -28,7 +28,6 @@ class CompanyController extends Controller
     {
         return view('companies.create');
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -40,14 +39,12 @@ class CompanyController extends Controller
         request()->validate([
             'name' => ['required'],
             'country' => ['required'],
-            'founded_at' => ['required'],
             'history' => ['required'],
         ]);
         $company = new Company();
 
         $company->name = request('name');
         $company->country = request('country');
-        $company->founded_at = request('founded_at');
         $company->history = request('history');
 
         $company->save();
@@ -74,7 +71,6 @@ class CompanyController extends Controller
      */
     public function edit(Company $company)
     {
-
         return view('companies.edit', compact('company'));
     }
 

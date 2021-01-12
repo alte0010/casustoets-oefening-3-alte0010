@@ -1,7 +1,45 @@
 @extends('common.master')
 
 @section('content')
-    <section class="section">
+    <div id="wrapper">
+        <div id="page" class="container">
+            <h1 class="heading has-text-weight-bold is-size-4">Create Company</h1>
+
+            <form method="POST" action="/companies">
+                @csrf
+
+                <div class="field">
+                    <label class="label" for="name">Name</label>
+
+                    <div class="control">
+                        <input class="input" type="name" name="name" id="name">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="country">Country</label>
+
+                    <div class="control">
+                        <input class="country" name="country" id="country">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="history">History</label>
+
+                    <div class="control">
+                        <input class="textarea" name="history" id="history">
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link" type="submit">Submit</button>
+                    </div>
+                </div>
+
+@endsection
+    {{--<section class="section">
         <div class="container">
             <div class="columns">
                 <div class="column is-12">
@@ -53,15 +91,16 @@
                                 </div>
                                 <div class="field is-grouped">
                                      Here are the form buttons: save, reset and cancel
-                                    <div class="control">
-                                        <button type="submit" class="button is-link">Save</button>
+                                        <div class="control">
+                                            <button class="button is-link" type="save">Save</button>
+                                        </div>
                                     </div>
                                     <div class="control">
                                         <button type="reset" class="button is-warning">Reset</button>
                                     </div>
-                                    <div class="control">
-                                        <a type="button" href="/companies" class="button is-light">Cancel</a>
-                                    </div>
+                                        <div class="control">
+                                            <button class="button is-link" type="cancel">Cancel</button>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -70,5 +109,6 @@
             </div>
         </div>
     </section>
-    {{--.--}}
+    --}}{{--.--}}{{--
 @endsection
+--}}
