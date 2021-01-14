@@ -12,7 +12,12 @@
                     <label class="label" for="name">Name</label>
 
                     <div class="control">
-                        <input class="input" type="name" name="name" id="name">
+                        <input class="input @error('name') is-danger @enderror" type="name" name="name" id="name" value="{{old('name') }}">
+
+                    @error('name')
+                    <p class="help is-danger">{{ $errors->first('name') }}</p>
+                    @enderror
+
                     </div>
                 </div>
 
@@ -20,7 +25,12 @@
                     <label class="label" for="country">Country</label>
 
                     <div class="control">
-                        <input class="country" name="country" id="country">
+                        <input class="input @error('country') is-danger @enderror" type="country" name="country" id="country" value="{{old('country') }}">
+
+                        @error('country')
+                        <p class="help is-danger">{{ $errors->first('country') }}</p>
+                        @enderror
+
                     </div>
                 </div>
 
@@ -28,7 +38,12 @@
                     <label class="label" for="history">History</label>
 
                     <div class="control">
-                        <input class="textarea" name="history" id="history">
+                        <input class="input @error('history') is-danger @enderror" type="history" name="history" id="history" value="{{old('history') }}">
+
+                        @error('history')
+                        <p class="help is-danger">{{ $errors->first('history') }}</p>
+                        @enderror
+
                     </div>
                 </div>
 
