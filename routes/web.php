@@ -19,4 +19,4 @@ Route::resource('movies', 'MovieController');
 
 /*Route::get('/companies/{companies}/create', 'CompanyController@create');*/
 
-return view('welcome', compact('latestPosts'));
+//return view('welcome', compact('latestPosts'));
