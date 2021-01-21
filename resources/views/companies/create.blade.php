@@ -47,6 +47,19 @@
                     </div>
                 </div>
 
+                <div class="field">
+                    <label class="label" for="founded_at">Founded At</label>
+
+                    <div class="control">
+                        <input class="input @error('founded_at') is-danger @enderror" type="founded_at" name="founded_at" id="founded_at" value="{{old('founded_at') }}">
+
+                        @error('founded_at')
+                        <p class="help is-danger">{{ $errors->first('founded_at') }}</p>
+                        @enderror
+
+                    </div>
+                </div>
+
                 <div class="field is-grouped">
                     <div class="control">
                         <button class="button is-link" type="submit">Submit</button>
