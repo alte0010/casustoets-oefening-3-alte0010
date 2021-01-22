@@ -39,7 +39,7 @@
                                 <br><br>
                             <form action="/companies/{{$company->id}}?_method=DELETE" method="POST">
                                     @csrf
-                                    <button class="ui red basic button">DELETE</button></td>
+                                <button class="ui red basic button">DELETE</button></form></td>
                         </tr>
                     @endforeach
                 </table>
