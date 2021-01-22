@@ -7,7 +7,7 @@
                     <a href="/" class="link">Home</a>
                 </div>
                 <div>
-                    <a href="/" class="link">Companies</a>
+                    <a href="/companies" class="link">Companies</a>
                 </div>
             </div>
 
