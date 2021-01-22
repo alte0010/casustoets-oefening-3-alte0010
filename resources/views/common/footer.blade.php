@@ -6,6 +6,9 @@
                 <div>
                     <a href="/" class="link">Home</a>
                 </div>
+                <div>
+                    <a href="/" class="link">Companies</a>
+                </div>
             </div>
 
             <div class="column has-text-centered">
