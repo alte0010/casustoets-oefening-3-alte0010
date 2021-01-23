@@ -5,7 +5,6 @@
         <div class="hero-body">
             <div class="container">
                 <p class="title is-1">{{$company->name}}</p>
-                <p class="subtitle is-3"></p>
             </div>
         </div>
 
@@ -23,7 +22,9 @@
                         <br><br>
                         <br><br>
                         <h4>History:</h4> {!! $company->history !!}
-                        <h4>Company Email:</h4> {!! $company->email !!}
+                        <br><br>
+                        <br><br>
+                        <h4>Company Email</h4> {!! $company->email !!}
 
                     </div>
 
