@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-
+                <div class="field">
                 <label class="label" for="email">Email</label>
 
                 <div class="control">
@@ -70,6 +70,7 @@
                     <p class="help is-danger">{{ $errors->first('email') }}</p>
                     @enderror
 
+                </div>
                 </div>
 
                 <div class="field is-grouped">
