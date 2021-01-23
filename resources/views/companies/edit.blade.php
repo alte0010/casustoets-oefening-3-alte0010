@@ -41,6 +41,14 @@
                     </div>
                 </div>
 
+                <div class="field">
+                    <label class="label" for="history">Company email</label>
+
+                    <div class="control">
+                        <textarea class="textarea" name="email" id="email">{{$company->email}}</textarea>
+                    </div>
+                </div>
+
                 <div class="field is-grouped">
                     <div class="control">
                         <button class="button is-link" type="submit">Submit</button>

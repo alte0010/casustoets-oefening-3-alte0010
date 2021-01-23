@@ -23,6 +23,7 @@
                         <br><br>
                         <br><br>
                         <h4>History:</h4> {!! $company->history !!}
+                        <h4>Company Email:</h4> {!! $company->email !!}
 
                     </div>
 

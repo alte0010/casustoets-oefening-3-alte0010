@@ -16,6 +16,7 @@ Route::get('/', 'HomeController@index');
 Route::resource('posts', 'PostsController');
 Route::resource('companies', 'CompanyController');
 Route::resource('movies', 'MovieController');
+Route::get('errors/500', 'HomeController@index');
 
 /*Route::get('/companies/{companies}/create', 'CompanyController@create');*/
 

@@ -12,8 +12,10 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
+
         // Get all the posts ordered by published date
         $posts = Post::orderBy('published_at', 'desc')->get();
 
@@ -30,6 +32,9 @@ class PostsController extends Controller
      */
     public function create()
     {
+        //Example of a 500 Error
+        abort(500, '/');
+
         return view('posts.create');
     }
 

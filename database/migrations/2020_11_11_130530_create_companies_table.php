@@ -19,6 +19,7 @@ class CreateCompaniesTable extends Migration
             $table->string('country');
             $table->timestamp('founded_at');
             $table->text('history');
+            $table->text('email');
             $table->timestamps();
         });
     }

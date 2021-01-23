@@ -10,6 +10,7 @@ $factory->define(Company::class, function (Faker $faker) {
         'name' => $faker->company,
         'Country' => $faker->country,
         'founded_at' => $faker->dateTime,
-        'history' => $faker->text
+        'history' => $faker->text,
+        'email' => $faker->email
     ];
 });

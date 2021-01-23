@@ -38,13 +38,12 @@
                     <label class="label" for="founded_at">Founded At</label>
 
                     <div class="control">
-                        <label for="phone">Enter an exact Date and Time (YYYY-MM-DD_HH:MM:SS):</label>
+                        <label for="founded_at">Enter an exact Date and Time (YYYY-MM-DD_HH:MM:SS):</label>
                         <input class="input @error('founded_at') is-danger @enderror" type="founded_at" name="founded_at" id="founded_at" value="{{old('founded_at')  }}">
 
                         @error('founded_at')
                         <p class="help is-danger">{{ $errors->first('founded_at') }}</p>
                         @enderror
-
                     </div>
                 </div>
 
@@ -62,6 +61,16 @@
                 </div>
 
 
+                <label class="label" for="email">Email</label>
+
+                <div class="control">
+                    <input class="input @error('email') is-danger @enderror" type="email" name="email" id="email" value="{{old('email') }}">
+
+                    @error('email')
+                    <p class="help is-danger">{{ $errors->first('email') }}</p>
+                    @enderror
+
+                </div>
 
                 <div class="field is-grouped">
                     <div class="control">
@@ -70,6 +79,23 @@
                 </div>
 
 @endsection
+
+
+                {{-- <div class="field">
+                     <label class="label" for="email">Email</label>
+
+                     <div class="control">
+                     <input class="input @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                     @error('email')
+                     <p class="help is-danger">
+                         p class="help is-danger">{{ $errors->first('history') }}</p>
+                                     </p>
+                     @enderror
+
+                 </div>--}}
+
+
     {{--<section class="section">
         <div class="container">
             <div class="columns">

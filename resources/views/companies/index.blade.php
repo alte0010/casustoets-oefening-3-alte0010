@@ -21,6 +21,7 @@
                         <th style="width: 1%">Country</th>
                         <th style="width: 10%">Founded at</th>
                         <th style="width: 10%">History</th>
+                        <th style="width: 10%">Company Email</th>
                         <th style="width: 10%">Created on</th>
                         <th style="width: 10%">Last edited</th>
                         <th style="width: 10%"></th>
@@ -33,6 +34,7 @@
                             <td>{{$company->country}}</td>
                             <td>{{$company->founded_at}}</td>
                             <td>{!!$company->history!!}</td>
+                            <td>{!!$company->email!!}</td>
                             <td>{{$company->created_at}}</td>
                             <td>{{$company->updated_at}}</td>
                             <td><a href="/companies/{{$company->id}}/edit" class="button is-primary">Edit Company</a>

@@ -26,6 +26,7 @@ class CompanyController extends Controller
      */
     public function create()
     {
+        /*abort(500, '/');*/
         return view('companies.create');
     }
     /**
@@ -41,6 +42,7 @@ class CompanyController extends Controller
             'country' => ['required'],
             'founded_at' => ['required'],
             'history' => ['required'],
+            'email' => ['required']
         ]);
         $company = new Company();
 
@@ -48,6 +50,7 @@ class CompanyController extends Controller
         $company->country = request('country');
         $company->founded_at = request('founded_at');
         $company->history = request('history');
+        $company->email = request('email');
 
         $company->save();
 

@@ -10,5 +10,5 @@ class Company extends Model
     {
         return $this->belongsToMany(Movies::class);;
     }
-    protected $fillable = ['name', 'country', 'history'];
+    protected $fillable = ['name', 'country', 'history, email'];
 }
