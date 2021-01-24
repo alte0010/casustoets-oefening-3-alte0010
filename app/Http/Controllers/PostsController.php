@@ -33,7 +33,7 @@ class PostsController extends Controller
     public function create()
     {
         //Example of a 500 Error
-        abort(500, '/');
+        /*abort(500, '/');*/
 
         return view('posts.create');
     }

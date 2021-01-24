@@ -12,7 +12,7 @@
                     <label class="label" for="name">Name</label>
 
                     <div class="control">
-                        <input class="input @error('name') is-danger @enderror" type="name" name="name" id="name" value="{{old('name') }}">
+                        <input class="input @error('name') is-danger @enderror" type="name" name="name" id="name" placeholder="Company Name" value="{{old('name') }}">
 
                     @error('name')
                     <p class="help is-danger">{{ $errors->first('name') }}</p>
@@ -25,7 +25,7 @@
                     <label class="label" for="country">Country</label>
 
                     <div class="control">
-                        <input class="input @error('country') is-danger @enderror" type="country" name="country" id="country" value="{{old('country') }}">
+                        <input class="input @error('country') is-danger @enderror" type="country" name="country" id="country" placeholder="Country Name" value="{{old('country') }}">
 
                         @error('country')
                         <p class="help is-danger">{{ $errors->first('country') }}</p>
@@ -38,8 +38,7 @@
                     <label class="label" for="founded_at">Founded At</label>
 
                     <div class="control">
-                        <label for="founded_at">Enter an exact Date and Time (YYYY-MM-DD_HH:MM:SS):</label>
-                        <input class="input @error('founded_at') is-danger @enderror" type="founded_at" name="founded_at" id="founded_at" value="{{old('founded_at')  }}">
+                        <input class="input @error('founded_at') is-danger @enderror" type="founded_at" name="founded_at" id="founded_at" placeholder="Type in: Year-Month-Day_Hour:Minute:Seconds" value="{{old('founded_at')  }}">
 
                         @error('founded_at')
                         <p class="help is-danger">{{ $errors->first('founded_at') }}</p>
@@ -51,7 +50,7 @@
                     <label class="label" for="history">History</label>
 
                     <div class="control">
-                        <input class="input @error('history') is-danger @enderror" type="history" name="history" id="history" value="{{old('history') }}">
+                        <input class="input @error('history') is-danger @enderror" type="history" name="history" id="history" placeholder="A text about the companies origin" value="{{old('history') }}">
 
                         @error('history')
                         <p class="help is-danger">{{ $errors->first('history') }}</p>
@@ -64,7 +63,7 @@
                 <label class="label" for="email">Email</label>
 
                 <div class="control">
-                    <input class="input @error('email') is-danger @enderror" type="email" name="email" id="email" value="{{old('email') }}">
+                    <input class="input @error('email') is-danger @enderror" type="email" name="email" id="email" placeholder="Example@mail.com" value="{{old('email') }}">
 
                     @error('email')
                     <p class="help is-danger">{{ $errors->first('email') }}</p>
