@@ -130,7 +130,7 @@
 
                     <div class="columns is-multiline">
 
-                        @foreach($latestPosts as $post)
+                        {{--@foreach($latestPosts as $post)
                             <div class="column is-12">
                                 <div class="card">
 
@@ -154,7 +154,7 @@
                                     </footer>
                                 </div>
                             </div>
-                        @endforeach
+                        @endforeach--}}
 
                     </div>
 
